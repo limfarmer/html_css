@@ -1,0 +1,23 @@
+body {
+  width: 100%;
+}
+.banner_container{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(212, 233, 22);
+  display: flex;
+  justify-content: ;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.big_banner{
+  width: 1300px;
+  height: 600px;
+  background-color: aqua;
+
+}
+.small_banner{
+  width: 500px;
+  height: 600px;
+  background-color: brown;
+}
