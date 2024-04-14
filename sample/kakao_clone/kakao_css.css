@@ -6,8 +6,21 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  word-break: keep-all;  /*단어가 길어질때 단어를 자르지않고 전체 단어를 한줄로 유지함*/
+  word-wrap: break-word; /*단어가 컨테이너 너비를 넘어가지 않게하고 줄바꿈을함*/
 }
-
+.header{
+  width: 100%;
+  height: 84px;
+  display: flex;
+  justify-content: center; /*임시 헤더 글자 중간 고정용 삭제해도 됨*/
+}
+main{
+  background-color: aqua;
+  height: 6000px; /*스크롤을 위해 임시로 6000으로 맞춰놓음*/
+}
 .banner_container {
   width: 100%;
   height: 100vh;
@@ -20,49 +33,66 @@ body {
 }
 
 .big_banner {
-  width: 100%; /* 너비 100%로 변경 */
-  max-width: 948px;
-  height: 600px;
   background-color: aqua;
+  position: relative;
+    width: 1424px;
+    height: 808px;
 }
-
+@media screen and (max-width: 1902px){
+  .big_banner {
+    width: 1094px;
+    height: 621px;
+  }
+  .small_banner{
+    width: 80vh;
+    height: 621px;
+  }
+  .banner_container {
+  }
+}
 @media screen and (max-width: 1439px) {
-  .banner_container {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
   .big_banner {
-    max-width: 948px;
+    width: 755px;
+    height: 486px;
   }
+  .small_banner{
+    width: 60vh;
+    height: 486px;
+  }
+  .banner_container {
+  }
+}
+@media screen and (max-width: 1023px){
+  .big_banner {
+    width: 100%;
+    height: 405px;
+  }
+  .small_banner{
+    width: 100%;
+    height: 405px;
+  }
+  .banner_container {
+  }
+}
+@media screen and (max-width: 767px){
+  .big_banner {
+    height: auto;
+  }
+  .small_banner{
+    height: auto;
+    margin-top: 40px;
+  }
+  .banner_container {
+  }
+  
 }
 
-@media screen and (max-width: 1902px) {
-  .banner_container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .big_banner {
-    max-width: 1316px;
-  }
-}
-
-@media screen and (min-width: 1903px) {
-  .banner_container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .big_banner {
-    max-width: 1712px;
-  }
-}
 
 .small_banner {
-  width: 500px;
-  height: 600px;
   background-color: brown;
 }
-.little_banner{
+/* .little_banner{
   width: 232px;
   height: 232px;
   background-color: black;
-}
+} */
