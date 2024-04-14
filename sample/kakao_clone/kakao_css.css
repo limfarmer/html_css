@@ -61,3 +61,8 @@ body {
   height: 600px;
   background-color: brown;
 }
+.little_banner{
+  width: 232px;
+  height: 232px;
+  background-color: black;
+}
