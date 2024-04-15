@@ -54,8 +54,7 @@ a{
 
 /* 가운데 검색 input 창 */
 .centerHeader{
-  height: 38px;
-  
+  height: 40px;
 }
 .search{
   height: 100%;
@@ -63,14 +62,54 @@ a{
   justify-content: center;
   width: 37rem;
 }
-#searchBar{
+.inputAndKeyboard{
   border-radius: 40px 0 0 40px;
   border: 1px solid #C6C6C6;
   height: 100%;
   width: 100%;
   border-right: none;
+  font-size: 1.03rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-right: 0.7rem;
 }
-
+.searchIconContainer {
+  position: relative;
+  width: 24px; /* 돋보기 아이콘 컨테이너의 너비 조정 */
+  height: 100%;
+  align-items: center;
+  display: none;
+}
+.searchIcon {
+  width: 18px; /* 돋보기 아이콘의 크기 조정 */
+  height: 18px;
+  content: url("../images/search.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+#searchBar{
+  width: 100%;
+}
+/* 기존 input창 스타일 제거 */
+#searchBar{
+  border: none;
+    outline: none; 
+    background: none;
+}
+/* 키보드 아이콘 */
+.keyboard{
+  background-size: 1.3rem 0.7rem;
+  background-position: right center;
+  background-image: url("../images/keyboard.png");
+  background-repeat: no-repeat;
+  padding-right: 2.1rem;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+}
 
 /* 검색 버튼 */
 .wrapBtt{
@@ -89,8 +128,6 @@ a{
   background-image: url("../images/search.png");
   background-size: contain;
   background-repeat: no-repeat;
-  
-
 }
 /* 버튼 css없앰 */
 button{
@@ -129,9 +166,38 @@ button{
 .rightHeader{
 
 }
-.settingSection{
-
+.settingBtt{
+  width: 2.2rem;
+}
+.settingLogo{
+  width: 0.85rem;
+  height: 0.85rem;
+  background-image: url("../images/dot.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .loginSection{
   
+}
+.loginBtt{
+  border: 1px solid #e2e1e1cb;
+  color: #3C90F4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  width: 5.9rem;
+  height: 2.3rem; 
+}
+.loginBtt:hover{
+  background-color: #DEF1FF;
+}
+.loginLogo{
+  width: 1.6rem;
+  height: 1.6rem;
+  background-image: url("../images/user.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 0.35rem;
+  margin-right: 0.25rem;
 }

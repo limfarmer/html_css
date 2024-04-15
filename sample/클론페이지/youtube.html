@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="youtubeCss.css">
   
   <script src="https://kit.fontawesome.com/108302d9a5.js" crossorigin="anonymous"></script>
+  
 </head>
 <body>
   <!-- @@헤드 네비바 -->
@@ -32,10 +33,18 @@
 
         <!-- 검색창 , 검색 버튼 -->
         <div class="search">
-          <input id="searchBar" type="text" placeholder="검색">
+          <div class="inputAndKeyboard">
+            <!-- 돋보기 hidden놈 -->
+            <button type="submit" class="searchIconContainer" >
+              <div class="searchIcon"></div>
+            </button>
+
+            <input id="searchBar" type="text" placeholder="검색">
+            <div class ="keyboard"></div>
+          </div>
+
           <button type="submit" class="wrapBtt">
             <div class="searchBtt">
-              
             </div>
           </button>
         </div>
@@ -54,7 +63,7 @@
         <!-- 점 세게 설정 버튼 -->
         <div class="setting">
           <div class="settingSection">
-            <button type="submit" class="micBtt">
+            <button type="submit" class="settingBtt">
               <div class="settingLogo">
                 
               </div>
@@ -65,10 +74,11 @@
         <!-- 로그인 로고 -->
         <div class="login">
           <div class="loginSection">
-            <button type="submit" class="micBtt">
+            <button type="submit" class="loginBtt">
               <div class="loginLogo">
                 
               </div>
+              로그인
             </button>
           </div>
         </div>
@@ -108,3 +118,17 @@
   
 </body>
 </html>
+<!-- 스크립트 -->
+<script>
+  let inputField = document.querySelector('.inputAndKeyboard input');
+  let hiddenSearch = document.querySelector('.searchIconContainer');
+inputField.addEventListener('focus', function() {
+    this.parentNode.style.border = '1px solid #1C62B9'; // 검색창 클릭시
+    hiddenSearch.style= 'display: flex; padding-right :20px;';
+});
+
+inputField.addEventListener('blur', function() {
+    this.parentNode.style.border = '1px solid #C6C6C6'; // 검색창 클릭 해제시
+    hiddenSearch.style ='dispaly : none;';
+});
+</script>
