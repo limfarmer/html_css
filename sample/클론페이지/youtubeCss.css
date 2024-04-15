@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  height: 56px;
+  background-color: antiquewhite;
+}
+.menuToggle{
+  margin-left: 0;
+}
+.leftHeader .centerHeader, .rightHeader{
+  justify-items: ;
+}
