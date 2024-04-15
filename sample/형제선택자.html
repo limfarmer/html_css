@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* h1 + h2{
+      color: red;
+    } */ 
+    /* h1 ~ h2{
+      color: red;
+    } */
+    h1::first-line {
+			content: "★";
+			color: red;
+		}
+    a:link{
+      color: orange;
+    }
+    a:visited{
+      color: green;
+    }
+    button:active{
+      width: 200px;
+      height: 200px;
+      background-color: rgb(15, 11, 223);
+      transition: all 0.6s ease-in;
+    }
+    button{
+      background-color: rgb(255, 38, 0);
+      width: 100px;
+      height: 100px;
+    }
+    button:hover{
+      width: 50px;
+      height: 50px;
+      color: rgb(226, 240, 31);
+      transition: all 1s ease-out;
+    }
+    input:focus{
+      background-color: blue;
+      color: red;
+    }
+    input:disabled{
+      background-color: darkgray;
+    }
+  </style>
+</head>
+<body>
+  <!-- 인접 형제 선택자 : + 기호를 사용해 인접한 형제 요소 선택-->
+  <!-- 일반 형제 선택자 : ~ -->
+  <!-- 가상 요소 선택자 : ::before, ::after, ::first-letter, ::first-line -->
+  <!-- 동적 가상 클래스 선택자 : :hover(마우스를 올리는 동작), :active(클릭 이벤트) -->
+  <!-- 입력 요소 가상 선택자 :  -->
+
+    <h1>Heading</h1>
+    <a href="https://www.youtube.com">유튜브</a>
+    <a href="https://www.instagram.com">인스타</a>
+    <a href="https://ebs.com">ebs</a>
+    <button type="submit">벝흔</button>
+  
+    <label for="in">입력</label><input type="text" id ="in">
+    <label for="in2">입력 비활성화</label>
+    <input type="text" id="in2" disabled>
+</body>
+</html>
