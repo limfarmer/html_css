@@ -12,60 +12,126 @@ body{
   justify-content: space-between;
   top: 0;
   height: 56px;
-  background-color: antiquewhite;
   padding: 0 16px;;
-}
-.menuToggle{
-  margin-left: 0;
 }
 .leftHeader, .centerHeader, .rightHeader{
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: 0.8rem;
+}
+
+/* 왼쪽 메뉴 + 로고 */
+.leftHeader{
+  padding-bottom: 0.6rem;
 }
 .menuToggle{
-  width:40px;
-  height: 40px;
-  padding: 8px;
+  width:30px;
+  height:30px;
+  padding-top: 0.85rem;
+  background-image: url("../images/menu.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 0.8rem;
+  margin-left: 0;
 }
 .logoImage{
   width: 85px;
   height: 15px;
+  padding-top: 0.2rem;
+}
+.logoIn  {
+  width: 90px;
+  height: 32px;
+  background-image: url("../images/youtube_logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 1.5rem;
+}
+a{
+  text-decoration: none;
+}
+
+/* 가운데 검색 input 창 */
+.centerHeader{
+  height: 38px;
   
 }
-/*  */
-@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One&subset=latin-ext');
-body{
-  background-color:whitesmoke;
+.search{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  width: 37rem;
 }
-.container{
-  padding:5%;   
-  display:flex;
-  flex-direction:row;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#searchBar{
+  border-radius: 40px 0 0 40px;
+  border: 1px solid #C6C6C6;
+  height: 100%;
+  width: 100%;
+  border-right: none;
 }
-.triangle{   
-  margin-top:3.2rem;
-  margin-left:6.2rem;
-  border-top: 1.5rem solid transparent;
-	border-left: 3.5rem  solid white;
-	border-bottom: 1.5rem solid transparent;
+
+
+/* 검색 버튼 */
+.wrapBtt{
+  height: 100%;
+  width: 64px;
+  background-color: #f8f8f8;
+  border-radius: 0 40px 40px 0;
+  border: 1px solid #C6C6C6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.logoIn{
-  height:9.5rem;
-  width:14.5rem;
-  background-color:#FF0000;
-  border-top-left-radius:25%;
-  border-top-right-radius:25%;
-  border-bottom-left-radius:25%;
-  border-bottom-right-radius:25%;
+.searchBtt{
+  width: 18px;
+  height: 18px;
+  background-image: url("../images/search.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+
 }
-.textIn{
-  font-family: 'Pathway Gothic One', sans-serif;
-  padding-left:1rem;
-  font-size:8rem;
-  font-weight:600;
+/* 버튼 css없앰 */
+button{
+  background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.search input{
+  font-size: 0.9rem;
+  padding-left: 0.95rem;
+  border-color: #1C62B9;
+    outline: none; 
+}
+/* 마이크 버튼 */
+.micBtt{
+  padding: 0;
+  border-radius: 100px;
+  margin-left: 12px;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.micLogo{
+  width: 1.7rem;
+  height: 1.7rem;
+  background-image: url("../images/mic.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+/* 오른쪽 로그인 검색 로고 */
+.rightHeader{
+
+}
+.settingSection{
+
+}
+.loginSection{
+  
 }
