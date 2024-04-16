@@ -13,12 +13,13 @@ body{
   top: 0;
   height: 56px;
   padding: 0 16px;;
+  background-color: #ffffff;
 }
 .leftHeader, .centerHeader, .rightHeader{
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 0.8rem;
+  margin-top: 0.3%;
 }
 
 /* 왼쪽 메뉴 + 로고 */

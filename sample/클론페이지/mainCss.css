@@ -1,0 +1,43 @@
+.mainContainer{
+  height : 4000px; /* 임의 px*/
+  margin-top: 4.3%;
+  display: flex;
+  justify-content: flex-start;
+}
+.content_area{
+  margin-left: 5.1%;
+  width: 67.4%;
+  height: 100%;
+
+}
+.mainVideo{
+  width: 100%;
+  background-color: coral;
+  border-radius: 1%;
+  height: 17.8%;
+}
+
+.content{
+  height: 4.5%;
+  background-color: black;
+  margin-top: 2%;
+}
+.insertContainer{
+  height: 2.2%;
+  margin-top: 2.7%;
+  background-color : chartreuse ;
+}
+.replyContainer{
+  height: 100%;
+  margin-top: 2.6%;
+  background-color: bisque;
+}
+
+
+/* 사이드 바 */
+.subContainer{
+  height: 100%;
+  width: 20.9%;
+  background-color: deepskyblue;
+  margin-left: 1.45%;
+}
