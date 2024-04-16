@@ -12,10 +12,17 @@
 }
 .mainVideo{
   width: 100%;
-  background-color: coral;
   border-radius: 1%;
   height: 17.8%;
 }
+#player{
+  border-radius: 10px;
+  width: 100%;
+    height: 100%;
+}
+
+/* @@@@@@@@@@@@@ 동영상 상세 정보 @@@@@@@@@@@@@@@@@@@@ */
+
 
 .content{
   /* height: 4.5%; */
@@ -29,8 +36,7 @@
   margin-bottom: 0.5rem;
 }
 .content a{
-  text-decoration: none;
-  color : black;
+  color : #2B76D9;
 }
 .contentDetail{
   height: 6rem;
@@ -39,24 +45,27 @@
   border-radius: 10px;
   padding: 10px;
   overflow: hidden;
+  cursor: pointer ;
 }
-#more-content{
+.sort{
+  font-size: 14px;
+}
+
+/* .contentDetailHidden{
   display: none;
-}
-#more-content:target {
-  height:50rem;
-  margin-top: 0.9rem;
+} */
+/* .contentDetail:target {
+  height:20rem;
   background-color : #F2F2F2 ;
-  border-radius: 10px;
-  padding: 10px;
-  display: block;
-}
-.insertContainer{
-  height: 2.2%;
-  margin-top: 0.9rem;
-  background-color : chartreuse ;
-}
-/* 유튜버 정보 */
+  
+  display: inline-block;
+  margin: 0;
+} */
+
+
+/* @@@@@@@@@@@@유튜버 정보@@@@@@@@@@@@@@ */
+
+
 .contentyoutuberInfo{
   width: 50%;
   display: flex;
@@ -122,7 +131,6 @@
   color: white;
   padding: 0 16px;
   border-radius: 18px;
-  
 }
 .divideInfo{
   display: flex;
@@ -175,6 +183,103 @@
   background-color: #E5E5E5;
 }
 
+
+/* @@@@@@@@@@@@@댓글 작성@@@@@@@@@@@@@@ */
+
+
+.insertContainer{
+  height: 9rem;
+  margin-top: 0.9rem;
+  /* background-color : chartreuse ; */
+  padding: 10px;
+
+}
+.replyIcon{
+  width: 20px;
+  height:20px;
+  background-image: url("../images/sort.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 0.4rem;
+}
+.replyTopSection{
+  display: flex;
+  justify-content: flex-start;
+}
+.replyTopSection span{
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 1.8rem;
+}
+.replyUserIcon{
+  width: 40px;
+  height:39px;
+  border-radius: 50%;
+  background-image: url("../images/unnamed.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.insertReply{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.insertBox{
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.insertBox input{
+  border: 0;
+  border-bottom: 1px solid #E5E5E5;
+  width: 100%;
+  outline: none;
+  background: none;
+  font-size: 15px;
+  transition: border-bottom 0.3s ease;
+}
+ .insertBox input:focus{
+  border-bottom: 1px solid #000000;
+} 
+ .insertBox input:focus + .hiddenCornfirmBtt{
+  display: flex;
+  justify-content: space-between;
+  
+} 
+.hiddenCornfirmBtt{
+  display: none;
+  margin-top: 1.1rem;
+  /* display: flex;
+  justify-content: space-between; */
+}
+.hiddenCornfirmBtt{
+  font-size: 1.5rem;
+}
+.hiddenCornfirmBtt button:nth-child(1){
+  background-color: #ffffff;
+  width: 4rem;
+  margin-right: 0.5rem;
+  height: 2.3rem;
+  font-weight: lighter;
+}
+.hiddenCornfirmBtt button:nth-child(1):hover{
+  background-color: #E5E5E5;
+  border-radius: 18px;
+  width: 4rem;
+  margin-right: 0.5rem;
+  height: 2.3rem;
+  font-weight: lighter;
+}
+
+.hiddenCornfirmBtt button:nth-child(2){
+  background-color: #F2F2F2;
+  border-radius: 18px;
+  width: 4rem;
+  margin-right: 0.5rem;
+  height: 2.3rem;
+  font-weight: lighter;
+}
 
 /* 사이드 바 */
 .subContainer{
