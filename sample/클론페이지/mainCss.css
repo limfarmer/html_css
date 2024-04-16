@@ -18,19 +18,161 @@
 }
 
 .content{
-  height: 4.5%;
-  background-color: black;
+  /* height: 4.5%; */
   margin-top: 2%;
+}
+.content p{
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  padding-top: 0.2%;
+  margin-bottom: 0.5rem;
+}
+.content a{
+  text-decoration: none;
+  color : black;
+}
+.contentDetail{
+  height: 6rem;
+  margin-top: 0.9rem;
+  background-color : #F2F2F2 ;
+  border-radius: 10px;
+  padding: 10px;
+  overflow: hidden;
+}
+#more-content{
+  display: none;
+}
+#more-content:target {
+  height:50rem;
+  margin-top: 0.9rem;
+  background-color : #F2F2F2 ;
+  border-radius: 10px;
+  padding: 10px;
+  display: block;
 }
 .insertContainer{
   height: 2.2%;
-  margin-top: 2.7%;
+  margin-top: 0.9rem;
   background-color : chartreuse ;
+}
+/* 유튜버 정보 */
+.contentyoutuberInfo{
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
 }
 .replyContainer{
   height: 100%;
   margin-top: 2.6%;
   background-color: bisque;
+}
+.channelLogo{
+  margin-right: 1.1%;
+}
+.wrapName{
+  display: flex;
+  flex-direction: column;
+  margin-right: 1.1%;
+  width: 10rem;
+}
+.wrapName span:nth-child(2){
+  font-size: 12px;
+}
+
+.name span{
+  display: flex;
+    flex-direction: row;
+  width: 180px;
+}
+.acceptLogo{
+  width:12px;
+  height:12px;
+  background-image: url("../images/check.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 0.4rem;
+  margin-top: 0.4rem;
+}
+.wrapClogo{
+  width: 3.5rem;
+  margin-top: 0.1rem;
+}
+.channelLogo{
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/profile.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 100px;
+  
+}
+/* 버튼 이미지 스샷 */
+/* .subBtt{
+  width:60px;
+  height:40px;
+  background-image: url("../images/subs.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
+.subBttn{
+  width: 4rem;
+  height: 36px;
+  background-color: black;
+  color: white;
+  padding: 0 16px;
+  border-radius: 18px;
+  
+}
+.divideInfo{
+  display: flex;
+    justify-content: space-between;
+}
+.infoBtt{
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.infoBtt button{
+  background-color: #F2F2F2;
+  border-radius: 18px;
+  width: 5rem;
+  margin-right: 0.5rem;
+  height: 2.3rem;
+  font-size: 14px;
+  font-weight: lighter;
+}
+.infoBttLike {
+  display: flex;
+  justify-content: center;
+  
+}
+.infoBtt >.infoBttLike >.infoBttThumbsUp {
+  border-radius: 40px 0 0 40px;
+  border-right: 1px solid lightgray;
+  margin: 0;
+  font-size: 16px;
+}
+.infoBtt > .infoBttLike > .infoBttThumbsDown{
+  border-radius: 0 40px 40px 0;
+  
+  width: 60px;
+}
+
+.infoBtt > .infoBttSave{
+  border-radius: 18px;
+  padding: 0 16px;
+  width: 9rem;
+  margin-right: 0.5rem;
+}
+.infoBtt > .infoBttMore{
+  border-radius: 50%;
+  width: 2.5rem;
+  margin-right: 0.5rem;
+}
+
+.infoBtt button:hover{
+  background-color: #E5E5E5;
 }
 
 
