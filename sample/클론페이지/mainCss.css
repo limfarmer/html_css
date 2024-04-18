@@ -1,5 +1,6 @@
 .mainContainer{
   height : 4000px; /* 임의 px*/
+  width: 100%;
   margin-top: 4.3%;
   display: flex;
   justify-content: flex-start;
@@ -586,7 +587,156 @@
 
 .subContainer{
   height: 100%;
-  width: 20.9%;
-  background-color: deepskyblue;
+  width: 410px;
   margin-left: 1.45%;
+  float: left;
+  padding-right: 20px;
+}
+.subBtt{
+  width: 100%;
+  height: 2.7rem;
+  display: flex;
+  justify-content: flex-start;
+}
+.subBtt button{
+  border-radius: 10px;
+  padding: 0 16px;
+  width: 100%;
+  margin-right: 0.5rem;
+  background-color: #F2F2F2;
+  white-space: nowrap;
+  height: 30px;
+}
+.subBtt button:nth-child(1){
+  border-radius: 10px;
+  width: 100%;
+  margin-right: 0.5rem;
+  background-color: #000000;
+  color: #ffffff;
+  white-space: nowrap;
+  height: 30px;
+}
+.subShorts{
+  width: 100%;
+  height: 24.8rem;
+  border-bottom: 0.8px solid #E5E5E5;
+}
+.shortsBanner{
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+}
+.shortsBanner span{
+  font-weight: bold;
+  font-size: 24px;
+}
+.shortLogo{
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+}
+.shortsLogoImg{
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/youtube-shorts-icon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.shortsMain{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.shortsVideo{
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: flex-start;
+}
+.shortsVideoImg:nth-child(1){
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/glass.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.shortsVideoImg:nth-child(2){
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/cat1.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.shortsVideoImg:nth-child(3){
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/cat2.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.shortsTitle{
+  display: flex;
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+.title1, .title2, .title3{
+  padding-right: 7px;
+  padding-left: 7px;
+}
+.shortsViewCnt{
+  display: flex;
+  margin-top: 10px;
+  font-size: 0.7rem;
+}
+.cnt1, .cnt2, .cnt3{
+  color: #555454;
+  padding-right: 13px;
+  padding-left: 7px;
+  margin-right: 30px;
+}
+.subVideo{
+  height: 95px;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+}
+.leftContainer{
+  width: 165px;
+  height:92px;
+}
+.subVideoImg{
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/sub1.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.subVideoDetail{
+  width: 50%;
+  display: flex;
+  flex-direction:column;
+  padding-left: 10px;
+}
+.subVideoName, .subVideoViewCnt{
+  font-size: 0.75rem;
+}
+.subVideoTitle{
+  display: inline-block;
+  font-size: 0.9rem;
+}
+.subVideoTitle span:nth-child(1) {
+  white-space: nowrap; /* 텍스트가 한 줄에만 표시되도록 설정 */
+  overflow: hidden; /* 넘치는 텍스트를 숨김 */
+  text-overflow: ellipsis;
 }
