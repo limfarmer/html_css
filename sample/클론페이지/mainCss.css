@@ -83,8 +83,8 @@
 }
 
 .wrapName{
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   margin-right: 1.5%;
   width: 10rem;
 }
@@ -94,7 +94,7 @@
 
 .name span{
   display: flex;
-    flex-direction: row;
+  flex-direction: row;
   width: 180px;
 }
 .acceptLogo{
@@ -113,10 +113,9 @@
 .channelLogo{
   width: 40px;
   height: 40px;
-  
   margin-right: 1.1%;
 }
-.
+
 /* 버튼 이미지 스샷 */
 /* .subBtt{
   width:60px;
@@ -125,6 +124,7 @@
   background-size: contain;
   background-repeat: no-repeat;
 } */
+
 .subBttn{
   width: 4rem;
   height: 36px;
@@ -189,10 +189,8 @@
 
 
 .insertContainer{
-  height: 9rem;
+  height: 5rem;
   margin-top: 0.9rem;
-  /* background-color : chartreuse ; */
-  padding: 10px;
 
 }
 .replyIcon{
@@ -285,17 +283,22 @@
 .replyContainer{
   height: 100%;
   margin-top: 2.6%;
-  background-color: bisque;
+  display: flex;
+  flex-direction: column;
 }
 .replys{
-  background-color: cyan;
   height: 4%;
   width: 98%;
   display: flex;
   justify-content: flex-start;
+  margin-bottom: 3rem;
+}
+.replyThumnail{
+  margin-right: 1.5%;
 }
 .rThumnail{
   width: 10%;
+  
 }
 .rLeftThumImg{
   width: 40px;
@@ -311,24 +314,251 @@
   height: inherit;
   height: 1.8rem;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.rFixName{
+  
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  
+}
+.rFixName i{
+  margin-right: 1%;
+}
+.rFixName span{
+  display: inline-block;
+  font-size: 12px;
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  color: #777666;
+}
+.rFixIconImg{
+  width: 0.85rem;
+  height: 0.85rem;
+  background-image: url("../images/dot.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 3px;
 }
 .rMember{
   width: 100%;
   height: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1%;
+}
+.wrapName{
+  display: flex;
+  flex-direction: row;
+}
+.rMemNameBtt{
+  display: flex;
+  justify-content: flex-start;
+  background-color: #888888;
+  align-items: center;
+  border-radius: 16px;
+  height: 1.3rem;
+  padding: 5px;
+  font-size: 0.9rem;
+  
+}
+.rMemNameBtt a{
+  text-decoration: none;
+  color: white;
+  width: 100%;
+}
+.rMemNameBtt i {
+  border-radius: 50%;
+  background-color: white;
+}
+.rMemName{
+  display: inline-block;
+  max-width: fit-content;
+  white-space: nowrap;
+}
+.rMemTime{
+  margin-left: 5px;
+}
+.rMemTime span{
+  font-weight: 100;
+  font-size: 0.7rem;
+  color: #777666;
+}
+.checkIcon{
+  font-size: 13px;
+  margin-left: 5px;
 }
 .rContent{
   width: 100%;
-  height: 90% ;
+  height: 90%;
+  margin-top: 5px;
 }
-.rLike{
+.rContent span{
+  font-size: 0.9rem;
+}
+/* 좋아요 부분 */
+.rLikeContainer{
   width: 100%;
-  height: 3.6rem;
+  height: 800px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 8px;
+}
+.likeNum{
+  color: #888888;
+  font-size: 0.9rem;
+}
+.rGoodImg, .rBadImg, .rGoodNum{
+  margin-right: 10px;
+}
+.rImg{
+  width: 20px;
+  height: 20px;
+  margin-right:20px ;
+}
+.youtuberThumImgHeart{
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/you-heart.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.rInsertReply{
+  height: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+.rInsertReply button:hover{
+  background-color: #E5E5E5;
+  border-radius: 18px;
+  height: 100%;
 }
 .rReply{
   width: 100%;
   height: 3.7rem;
+  display: flex;
+}
+.rDownToggle{
+  width: 30px;
 }
 
+.rDownToggle button{
+  margin-right: 0.5rem;
+  color: #065FD4;
+  height: 30px;
+  width: 30px;
+}
+.rDownToggle button:hover{
+  background-color: #DEF1FF;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.rReplyImg{
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+  margin-top: 5px;
+}
+.rReplyCount button{
+  color: #065FD4;
+  height: 30px;
+  width: 80px;
+}
+.rReplyCount button:hover {
+  background-color: #DEF1FF;
+  border-radius: 18px;
+  height: 30px;
+  width: 80px;
+}
+/* 답글 각 사용자 썸네일 */
+.replys:nth-child(2) >.replyContent >.rThumnail>.rLeftThumImg>.youThumImg{
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/profile2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 100px;
+}
+.replys:nth-child(3) >.replyContent >.rThumnail>.rLeftThumImg>.youThumImg{
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/profile34.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 100px;
+}
+.replys:nth-child(4) >.replyContent >.rThumnail>.rLeftThumImg>.youThumImg{
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/profile34.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 100px;
+}
+.replys:nth-child(5) >.replyContent >.rThumnail>.rLeftThumImg>.youThumImg{
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/profile5.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 100px;
+}
+.replys:nth-child(6) >.replyContent >.rThumnail>.rLeftThumImg>.youThumImg{
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/profile6.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 100px;
+}
+.replys:nth-child(7) >.replyContent >.rThumnail>.rLeftThumImg>.youThumImg{
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/profile7.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 100px;
+}
+.replys:nth-child(8) >.replyContent >.rThumnail>.rLeftThumImg>.youThumImg{
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/profile8.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 100px;
+}
+.replys:nth-child(9) >.replyContent >.rThumnail>.rLeftThumImg>.youThumImg{
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/profile9.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 100px;
+}
+.replys:nth-child(10) >.replyContent >.rThumnail>.rLeftThumImg>.youThumImg{
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/profile11.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 100px;
+}
+.replys:nth-child(11) >.replyContent >.rThumnail>.rLeftThumImg>.youThumImg{
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/profile10.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 100px;
+}
+/* 답글 각 사용자 썸네일 끝*/
 
 /* @@@@@@@@@@@@@사이드 바@@@@@@@@@@@ */
 
