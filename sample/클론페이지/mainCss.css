@@ -20,7 +20,15 @@
   width: 100%;
     height: 100%;
 }
-
+/* 유튜버 이미지 공통 */
+.youtuberThumImg{
+  background-image: url("../images/profile.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+}
 /* @@@@@@@@@@@@@ 동영상 상세 정보 @@@@@@@@@@@@@@@@@@@@ */
 
 
@@ -39,11 +47,13 @@
   color : #2B76D9;
 }
 .contentDetail{
-  height: 6rem;
+  height: 6.5rem;
   margin-top: 0.9rem;
   background-color : #F2F2F2 ;
   border-radius: 10px;
   padding: 10px;
+  font-size: 14px;
+  font-weight: 100;
   overflow: hidden;
   cursor: pointer ;
 }
@@ -71,18 +81,11 @@
   display: flex;
   justify-content: flex-start;
 }
-.replyContainer{
-  height: 100%;
-  margin-top: 2.6%;
-  background-color: bisque;
-}
-.channelLogo{
-  margin-right: 1.1%;
-}
+
 .wrapName{
   display: flex;
   flex-direction: column;
-  margin-right: 1.1%;
+  margin-right: 1.5%;
   width: 10rem;
 }
 .wrapName span:nth-child(2){
@@ -110,12 +113,10 @@
 .channelLogo{
   width: 40px;
   height: 40px;
-  background-image: url("../images/profile.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  border-radius: 100px;
   
+  margin-right: 1.1%;
 }
+.
 /* 버튼 이미지 스샷 */
 /* .subBtt{
   width:60px;
@@ -280,8 +281,24 @@
   height: 2.3rem;
   font-weight: lighter;
 }
+ /* 댓글 목록 */
+.replyContainer{
+  height: 100%;
+  margin-top: 2.6%;
+  background-color: bisque;
+}
+.replys{
+  background-color: cyan;
+  height: 4%;
+  width: 98%;
+}
 
-/* 사이드 바 */
+
+
+
+/* @@@@@@@@@@@@@사이드 바@@@@@@@@@@@ */
+
+
 .subContainer{
   height: 100%;
   width: 20.9%;
