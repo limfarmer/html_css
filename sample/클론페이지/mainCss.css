@@ -287,11 +287,11 @@
   flex-direction: column;
 }
 .replys{
-  height: 4%;
+  height: 3%;
   width: 98%;
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 3rem;
+  margin-bottom: 0.8rem;
 }
 .replyThumnail{
   margin-right: 1.5%;
@@ -363,7 +363,6 @@
   height: 1.3rem;
   padding: 5px;
   font-size: 0.9rem;
-  
 }
 .rMemNameBtt a{
   text-decoration: none;
@@ -381,6 +380,8 @@
 }
 .rMemTime{
   margin-left: 5px;
+  align-items: center;
+    display: flex;
 }
 .rMemTime span{
   font-weight: 100;
@@ -402,7 +403,7 @@
 /* 좋아요 부분 */
 .rLikeContainer{
   width: 100%;
-  height: 800px;
+  height: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -414,6 +415,10 @@
 }
 .rGoodImg, .rBadImg, .rGoodNum{
   margin-right: 10px;
+}
+.rGoodImg a, .rBadImg a {
+  text-decoration: none;
+  color: black;
 }
 .rImg{
   width: 20px;
@@ -476,6 +481,9 @@
   border-radius: 18px;
   height: 30px;
   width: 80px;
+}
+.replyContent{
+  margin-right: 1.5%;
 }
 /* 답글 각 사용자 썸네일 */
 .replys:nth-child(2) >.replyContent >.rThumnail>.rLeftThumImg>.youThumImg{
@@ -560,6 +568,19 @@
 }
 /* 답글 각 사용자 썸네일 끝*/
 
+.rMemNameBttEtc{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 16px;
+  height: 1.3rem;
+  font-size: 0.9rem;
+}
+.rMemNameBttEtc a{
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
 /* @@@@@@@@@@@@@사이드 바@@@@@@@@@@@ */
 
 
