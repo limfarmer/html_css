@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
-  font-family:"Roboto", "Arial", sans-serif
+  font-family:"Roboto", "Arial", sans-serif;
+  line-height: 1.5;
 }
 body{
   margin: 0;
@@ -22,7 +23,17 @@ body{
   align-items: center;
   margin-top: 0.3%;
 }
-
+/* 히든 메뉴 */
+.hiddenMenu{
+  width: 20%;
+  height: 100%;
+  background-color: white;
+  z-index: 99;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+/* 히든 메뉴 */
 /* 왼쪽 메뉴 + 로고 */
 .leftHeader{
   padding-bottom: 0.6rem;
