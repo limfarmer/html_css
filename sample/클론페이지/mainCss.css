@@ -788,3 +788,6 @@
   background-repeat: no-repeat;
   border-radius: 10px;
 }
+.hiddenMenu{
+  display: none;
+}
