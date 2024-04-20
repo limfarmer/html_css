@@ -4,22 +4,43 @@
       height: auto; /* 이미지와 동영상의 세로 비율을 유지합니다. */
   }
 }
-
+@media (max-width: 768px) {
+  .div1 {
+    flex-basis: 100%; /* Div 1 takes full width */
+  }
+  .div2 {
+    flex-basis: auto; /* Div 2 takes remaining space */
+  }
+}
 .mainContainer{
   height : 4000px; /* 임의 px*/
   width: 100%;
-  margin-top: 4.3%;
+  margin-top: 3.3%;
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 .content_area{
-  margin-left: 5.1%;
+  margin-left: 2vw;
   width: 67.4%;
   height: 100%;
-
+  flex: 1 1 70%;
+  padding-right: 24px;
+  padding-top: 24px;
+  
 }
+.subContainer{
+  flex: 0 0 20%;
+  
+}
+
+.html5-video-container{
+  width: 10px;
+  height: 10px;
+}
+
 .mainVideo{
-  width: 100%;
+  width: 70vw;
   border-radius: 1%;
   height: 17.8%;
 }
@@ -595,7 +616,6 @@
 .subContainer{
   height: 100%;
   width: 410px;
-  margin-left: 1.45%;
   float: left;
   padding-right: 20px;
 }
