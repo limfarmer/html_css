@@ -14,33 +14,32 @@
 }
 .mainContainer{
   height : 4000px; /* 임의 px*/
-  width: 100%;
+  /* width: 100%; */
+  margin-left: 4vw;
   margin-top: 3.3%;
   display: flex;
   justify-content: flex-start;
-  flex-wrap: wrap;
 }
 .content_area{
-  margin-left: 2vw;
-  width: 67.4%;
+  width: 70vw;
   height: 100%;
-  flex: 1 1 70%;
   padding-right: 24px;
   padding-top: 24px;
   
 }
+
 .subContainer{
-  flex: 0 0 20%;
-  
+  height: 100%;
+  padding-right: 20px;
+  width: 21.5vw;
 }
 
-.html5-video-container{
-  width: 10px;
-  height: 10px;
+.contentContainer{
+  width: 70vw;
 }
 
 .mainVideo{
-  width: 70vw;
+  width: 100%;
   border-radius: 1%;
   height: 17.8%;
 }
@@ -63,7 +62,6 @@
 
 .content{
   /* height: 4.5%; */
-  margin-top: 2%;
 }
 .content p{
   font-family: Roboto, Arial, sans-serif;
@@ -71,6 +69,7 @@
   font-size: 20px;
   padding-top: 0.2%;
   margin-bottom: 0.5rem;
+  margin-top: 1%;
 }
 .content a{
   color : #2B76D9;
@@ -85,6 +84,7 @@
   font-weight: 100;
   overflow: hidden;
   cursor: pointer ;
+  width: 98%;
 }
 .sort{
   font-size: 14px;
@@ -106,7 +106,7 @@
 
 
 .contentyoutuberInfo{
-  width: 50%;
+  width: 53%;
   display: flex;
   justify-content: flex-start;
 }
@@ -164,10 +164,9 @@
 }
 .divideInfo{
   display: flex;
-    justify-content: space-between;
 }
 .infoBtt{
-  width: 50%;
+  width: 45%;
   display: flex;
   justify-content: flex-end;
 }
@@ -193,7 +192,6 @@
 }
 .infoBtt > .infoBttLike > .infoBttThumbsDown{
   border-radius: 0 40px 40px 0;
-  
   width: 60px;
 }
 
@@ -613,12 +611,7 @@
 /* @@@@@@@@@@@@@사이드 바@@@@@@@@@@@ */
 
 
-.subContainer{
-  height: 100%;
-  width: 410px;
-  float: left;
-  padding-right: 20px;
-}
+
 .subBtt{
   width: 100%;
   height: 2.7rem;
@@ -761,12 +754,10 @@
 .subVideoTitle{
   display: inline-block;
   font-size: 0.9rem;
-}
-.subVideoTitle {
   white-space: nowrap; /* 텍스트가 한 줄에만 표시되도록 설정 */
   overflow: hidden; /* 넘치는 텍스트를 숨김 */
   text-overflow: ellipsis;
-  width: 200px;
+  /* width: 200px; */
 }
 .subVideoImg2{
   width: 100%;
