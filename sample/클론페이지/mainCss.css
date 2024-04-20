@@ -1,4 +1,4 @@
-@media screen and (min-width: 1080px) {
+@media screen and (max-width: 1017px) {
   img, video {
       max-width: 100%;
       height: auto; /* 이미지와 동영상의 세로 비율을 유지합니다. */
