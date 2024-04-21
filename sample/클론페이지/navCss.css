@@ -72,12 +72,16 @@ a{
 /* 가운데 검색 input 창 */
 .centerHeader{
   height: 40px;
+  display: flex;
+  width: 100%;
+  margin-top: 0.8%;
+  justify-content: center;
 }
 .search{
   height: 100%;
   display: flex;
   justify-content: center;
-  width: 37rem;
+  width: 50%;
 }
 .inputAndKeyboard{
   border-radius: 40px 0 0 40px;

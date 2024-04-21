@@ -6,22 +6,9 @@
   .mainVideo {
     width: 100%; /* Take full width */
   }
-  .insertContainer, .subContainer {
-    width: 100%; /* Take full width */
-  }
-  .contentContainer{
-    width: 100vw;
-    
-  }
-  .content{
-    width: 100%;
-  }
-  .subContainer {
-    /* Change order to appear between mainVideo and insertContainer */
-    height: 300px;
-    width: 300px;
-    order: 1;
-  }
+ 
+  
+  
 }
 .hideSubVideo{
   display: none;
@@ -31,29 +18,24 @@
 
 
 .mainContainer{
-  height : 4000px; /* 임의 px*/
-  /* width: 100%; */
-  margin-left: 4vw;
-  margin-top: 3.3%;
+  width: 100%;
   display: flex;
+  margin-top: 3.3%;
+  padding: 24px;
 }
 .content_area{
   height: 100%;
-  padding-right: 24px;
-  padding-top: 24px;
-  /* width: 30%; */
+  padding : 24px;
+  width: 70%;
 }
 
 .subContainer{
   height: 100%;
   padding-right: 20px;
-  width: 400px;
+  /* width: 400px; */
+  width: 30%;
 }
 
-.contentContainer{
-  width: auto;
-  /* height: 1000px; */
-}
 
 .mainVideo{
   width: 100%;
@@ -101,7 +83,7 @@
   font-weight: 100;
   overflow: hidden;
   cursor: pointer ;
-  width: 98%;
+  width: 100%;
 }
 .sort{
   font-size: 14px;
@@ -163,14 +145,16 @@
 }
 
 /* 버튼 이미지 스샷 */
-/* .subBtt{
-  width:60px;
-  height:40px;
-  background-image: url("../images/subs.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-} */
 
+.subBtt{
+  margin-top : 4%;
+}
+.subBtt{
+  width: 100%;
+  height: 2.7rem;
+  display: flex;
+  justify-content: flex-start;
+}
 .subBttn{
   width: 4rem;
   height: 36px;
@@ -178,6 +162,7 @@
   color: white;
   padding: 0 16px;
   border-radius: 18px;
+  
 }
 .divideInfo{
   display: flex;
@@ -331,7 +316,6 @@
   flex-direction: column;
 }
 .replys{
-  height: 3%;
   width: 98%;
   display: flex;
   justify-content: flex-start;
@@ -347,7 +331,6 @@
 .rLeftThumImg{
   width: 40px;
   height: 40px;
-
 }
 .wrapReply{
   display: flex;
@@ -355,18 +338,14 @@
   width: 100%;
 }
 .rFix{
-  height: inherit;
-  height: 1.8rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 .rFixName{
-  
   display: flex;
   justify-content: flex-start;
   width: 50%;
-  
 }
 .rFixName i{
   margin-right: 1%;
@@ -389,7 +368,6 @@
 }
 .rMember{
   width: 100%;
-  height: 1.8rem;
   display: flex;
   justify-content: space-between;
   margin-top: 1%;
@@ -489,7 +467,6 @@
 }
 .rReply{
   width: 100%;
-  height: 3.7rem;
   display: flex;
 }
 .rDownToggle{
@@ -629,12 +606,7 @@
 
 
 
-.subBtt{
-  width: 100%;
-  height: 2.7rem;
-  display: flex;
-  justify-content: flex-start;
-}
+
 .subBtt button{
   border-radius: 10px;
   padding: 0 16px;
@@ -697,8 +669,8 @@
   background-image: url("../images/glass.webp");
   background-size: contain;
   background-repeat: no-repeat;
-  margin-right: 10px;
-  margin-top: 20px;
+  /* margin-right: 10px;
+  margin-top: 20px; */
   border-radius: 10px;
 }
 .im2{
@@ -707,8 +679,6 @@
   background-image: url("../images/cat1.webp");
   background-size: contain;
   background-repeat: no-repeat;
-  margin-right: 10px;
-  margin-top: 20px;
   border-radius: 10px;
 }
 .im3{
@@ -717,8 +687,6 @@
   background-image: url("../images/cat2.webp");
   background-size: contain;
   background-repeat: no-repeat;
-  margin-right: 10px;
-  margin-top: 20px;
   border-radius: 10px;
 }
 .shortsTitle{
@@ -819,6 +787,12 @@
 .hiddenMenu{
   display: none;
 }
+.card{
+  height: 230px;
+    width: 146px;
+  padding: 12px;
+}
+
 @media screen and (max-width: 1016px){
   .hideSubVideo{
     display: flex;
@@ -826,15 +800,58 @@
     height: auto;
     flex-direction: column;
   }
+  .content_area{
+    padding : 23px;
+    width: 100%;
+  }
+  .mainVideo{
+    width: 100%;
+  }
+  .subContainer{
+    display: none;
+  }
   .shortsMain{
     display: flex;
     flex-direction: row;
   }
-  .subBtt{
-
-  }
   .subShorts{
     border-top: 0.8px solid #E5E5E5;
-   
+  }
+  .card{
+    width: 130px;
+        height: 210px;
+    margin-left: 2px;
+  }
+
+  .subVideoTitle{
+    width: 600px;
+  }
+  .moreBtt{
+    width: 100%;
+    border : 0.8px solid #E5E5E5;
+    border-radius: 17px;
+    height: 35px;
+    margin-top: 7px;
+    text-align: center;
+  }
+  .title1,.title2,.title3 {
+    padding-right: 0px;
+  }
+  .cnt1,.cnt2,.cnt3{
+    padding-right: 0px;
+  }
+  
+}
+.ch{
+  width: 100%;
+}
+@media screen and (max-width : 1500px){
+  .infoBttClip{
+    display: none;
+  }
+}
+@media screen and (max-width : 1310px){
+  .infoBttDonation{
+    display: none;
   }
 }
