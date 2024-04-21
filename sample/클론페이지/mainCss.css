@@ -1,47 +1,56 @@
-@media screen and (max-width: 1017px) {
-  img, video {
-      max-width: 100%;
-      height: auto; /* 이미지와 동영상의 세로 비율을 유지합니다. */
+@media screen and (max-width: 1016px) {
+  .mainContainer {
+    flex-direction: column; /* Change to vertical layout */
+    
+  }
+  .mainVideo {
+    width: 100%; /* Take full width */
+    ;
+  }
+  .insertContainer, .subContainer {
+    width: 100%; /* Take full width */
+  }
+  .contentContainer{
+    width: 100vw;
+  }
+  .content{
+    width: 100%;
+  }
+  .subContainer {
+    /* Change order to appear between mainVideo and insertContainer */
+    display: none;
   }
 }
-@media (max-width: 768px) {
-  .div1 {
-    flex-basis: 100%; /* Div 1 takes full width */
-  }
-  .div2 {
-    flex-basis: auto; /* Div 2 takes remaining space */
-  }
-}
+
 .mainContainer{
   height : 4000px; /* 임의 px*/
   /* width: 100%; */
   margin-left: 4vw;
   margin-top: 3.3%;
   display: flex;
-  justify-content: flex-start;
 }
 .content_area{
-  width: 70vw;
   height: 100%;
   padding-right: 24px;
   padding-top: 24px;
-  
+  /* width: 30%; */
 }
 
 .subContainer{
   height: 100%;
   padding-right: 20px;
-  width: 21.5vw;
+  width: 400px;
 }
 
 .contentContainer{
-  width: 70vw;
+  width: auto;
+  /* height: 1000px; */
 }
 
 .mainVideo{
   width: 100%;
   border-radius: 1%;
-  height: 17.8%;
+  height: 45vw;
 }
 #player{
   border-radius: 10px;
@@ -308,7 +317,7 @@
 }
  /* 댓글 목록 */
 .replyContainer{
-  height: 100%;
+  /* height: 100%; */
   margin-top: 2.6%;
   display: flex;
   flex-direction: column;
