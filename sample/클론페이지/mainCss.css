@@ -40,7 +40,7 @@
 .mainVideo{
   width: 100%;
   border-radius: 1%;
-  height: 45vw;
+  height: 40vw;
 }
 #player{
   border-radius: 10px;
@@ -148,9 +148,7 @@
 
 .subBtt{
   margin-top : 4%;
-}
-.subBtt{
-  width: 100%;
+  width: 80%;
   height: 2.7rem;
   display: flex;
   justify-content: flex-start;
